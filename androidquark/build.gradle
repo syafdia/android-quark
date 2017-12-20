@@ -11,13 +11,13 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.syafdia'
 
 android {
+    defaultPublishConfig 'release'
     compileSdkVersion 26
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
