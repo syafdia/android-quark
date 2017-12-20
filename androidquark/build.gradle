@@ -27,6 +27,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
     buildToolsVersion '26.0.2'
 }
 
@@ -49,6 +52,10 @@ dependencies {
 
     // support libs
     implementation "com.android.support:appcompat-v7:$support_version"
+    kapt 'com.android.databinding:compiler:3.0.0'
+
+    // arch
+    implementation "android.arch.lifecycle:extensions:$arch_version"
 
     // reactive extension
     implementation 'io.reactivex.rxjava2:rxjava:2.1.5'
