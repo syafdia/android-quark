@@ -1,5 +1,5 @@
 # android-quark
-Small library for android for creating Android app using Kotlin.
+Small library wrapper for creating Android app using Kotlin.
 
 ##
 
